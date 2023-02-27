@@ -1,0 +1,212 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  animation: anmol 10s linear infinite;
+  background-color: #845ec2;
+}
+
+@keyframes anmol {
+  0% {
+    background-color: #845ec2;
+  }
+  20% {
+    background-color: #f33058;
+  }
+  40% {
+    background-color: #402dee;
+  }
+  60% {
+    background-color: #f1d359;
+  }
+  80% {
+    background-color: #bc5ec2;
+  }
+  100% {
+    background-color: #00e2f7;
+  }
+}
+
+@keyframes changeBg {
+  0% {
+    background-color: rgb(180, 58, 155);
+  }
+  20% {
+    background-color: yellow;
+  }
+  40% {
+    background-color: rgb(114, 227, 233);
+  }
+  60% {
+    background-color: rgb(202, 166, 236);
+  }
+  80% {
+    background-color: floralwhite;
+  }
+  100% {
+    background-color: rgb(152, 217, 245);
+  }
+}
+
+#main-nav {
+  background-color: dodgerblue;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#main-nav #logo {
+  width: 100px;
+  padding: 5px;
+}
+
+#main-nav a {
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+}
+
+#main-nav a:hover {
+  transform: scale(1.1);
+  z-index: 100;
+  background: cyan;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  color: black;
+}
+
+#header {
+  text-align: center;
+  padding: 30px;
+  border-bottom: 1px solid #777;
+  font-family: "Times New Roman", Times, serif;
+  animation: changeBg 10s linear infinite;
+  background-color: rgb(180, 58, 155);
+}
+
+#header h1 {
+  padding: 10px;
+  font-size: 50px;
+}
+
+#social {
+  display: flex;
+  justify-content: center;
+}
+
+#social img {
+  width: 30px;
+  margin: 10px;
+}
+
+.content {
+  display: flex;
+  min-height: 400px;
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 0.5551470588235294) 0%,
+    rgba(29, 225, 253, 0.4767156862745098) 53%,
+    rgba(245, 252, 69, 0.2862394957983193) 100%
+  );
+}
+
+#main {
+  flex-basis: 60%;
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-end;
+}
+
+#main .card {
+  border: 1px solid black;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  flex-basis: 30%;
+  margin: 10px;
+  font-family: "Times New Roman", Times, serif;
+  border-radius: 5px;
+}
+
+.card p {
+  padding: 10px;
+  text-align: justify;
+}
+
+.card p:hover {
+  transform: scale(1.1);
+  z-index: 100;
+  background: cyan;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  color: black;
+}
+
+.card button {
+  background-color: #333;
+  color: white;
+  border: 0px;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+.card button:hover {
+  background-color: pink;
+  color: black;
+}
+
+#aside {
+  flex-basis: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#aside img {
+  width: 350px;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.overlay h2 {
+  font-size: 40px;
+  text-shadow: 0px 0px 4px rgb(146, 146, 146);
+}
+
+.overlay p {
+  letter-spacing: 3px;
+  text-shadow: 0px 0px 4px rgb(146, 146, 146);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+  background-image: url(../images/scott-webb-UjupleczBOY-unsplash.jpg);
+}
+
+footer h3 {
+  padding: 25px;
+  font-weight: bold;
+  color: rgb(0, 20, 57);
+  font-size: 35px;
+}
+
+footer .f-nav {
+  padding: 15px;
+}
+
+footer .f-nav a {
+  background-color: rgb(0, 20, 57);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
